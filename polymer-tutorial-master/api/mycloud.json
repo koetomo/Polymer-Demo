@@ -1,0 +1,33 @@
+[
+  {
+    "name" : "WD My Cloud Mirror",
+    "avatar" : "../images/mirror.png",
+    "favorite": false
+  },
+  {
+    "name" : "WD My Cloud EX2",
+    "avatar" : "../images/ex2.png",
+    "favorite": false
+  },
+  {
+    "name" : "WD My Cloud EX4",
+    "avatar" : "../images/ex4.png",
+    "favorite": false
+  },
+
+  {
+    "name" : "WD My Cloud",
+    "avatar" : "../images/mycloud.png",
+    "favorite": false
+  },
+  {
+    "name" : "My Book Live Duo",
+    "avatar" : "../images/liveduo.png",
+    "favorite": false
+  },
+  {
+    "name" : "My Book Live",
+    "avatar" : "../images/live.png",
+    "favorite": false
+  }  
+]

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>woo</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="jquery.carouFredSel-6.2.1-packed.js"></script>
+
+	<style>
+		.nav{
+			width:20px;
+			height:150px;
+			background-color:steelblue;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav"id="prev"></div>
+	<div id="carousel" style="float:left">
+		<div>
+			<h3>woot</h3>
+			<img src="http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg"></img>
+		</div>
+		<div>
+			<h3>ns</h3>
+			<img src="http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg"></img>
+		</div>
+		<div>
+			<h3>dft</h3>
+			<img src="http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg"></img>
+		</div>
+		<div>
+			<h3>ship</h3>
+			<img src="http://blog.gettyimages.com/wp-content/uploads/2013/01/Siberian-Tiger-Running-Through-Snow-Tom-Brakefield-Getty-Images-200353826-001.jpg"></img>
+		</div>
+	</div>
+	<div class="nav" id="next"></div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    // Using default configuration
+	    $('#carousel').carouFredSel();
+
+	    // Using custom configuration
+	    $('#carousel').carouFredSel({
+	        auto: false,
+            circular: false,
+            infinite: false,
+            items: 2,
+            start: 0,
+            prev: {
+                button          : '#prev',
+                key             : "left"
+            },
+            next: {
+                button          : '#next',
+                key             : "right"
+            },
+            mousewheel: false,
+            scroll : {
+                items           : 1,
+                easing          : "quadratic",
+                duration        : 600,
+                pauseOnHover    : false
+            }               
+	    });
+	});
+	</script>
+	
+</body>
+
